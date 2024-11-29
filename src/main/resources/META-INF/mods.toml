@@ -8,7 +8,7 @@ version = "${version}"
 displayName = "KubeJs ProjectE RecipeEMC"
 authors = "Glaceon-471"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Mod to be able to add RecipeEMC for ProjectE in KubeJS
 '''
 #logoFile = ""
 
