@@ -1,0 +1,41 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "LGPL-3.0"
+
+[[mods]]
+modId = "kubejs_projecte_recipe_emc"
+version = "${version}"
+displayName = "KubeJs ProjectE RecipeEMC"
+authors = "Glaceon-471"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.kubejs_projecte_recipe_emc]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.kubejs_projecte_recipe_emc]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.kubejs_projecte_recipe_emc]]
+modId="kubejs"
+mandatory=true
+versionRange="${KubeJSVersionRange}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.kubejs_projecte_recipe_emc]]
+modId="projecte"
+mandatory=true
+versionRange="${ProjectEVersionRange}"
+ordering="NONE"
+side="BOTH"

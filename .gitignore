@@ -1,0 +1,34 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+logs
+*.log
+
+# other
+eclipse
+run
+run_server
+.vscode
+.architectury-transformer/
+
+# metadata (macOS)
+.DS_Store
+
+# metadata (windows)
+Thumbs.db
+desktop.ini
