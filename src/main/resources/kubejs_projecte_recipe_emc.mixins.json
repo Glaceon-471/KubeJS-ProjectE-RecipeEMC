@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.glaceon_471.kubejs.projecte_recipe_emc",
+  "package": "com.glaceon_471.kubejs.projecte_recipe_emc.mixin",
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "client": [
