@@ -12,12 +12,12 @@ import moze_intel.projecte.emc.nbt.NBTManager;
 import moze_intel.projecte.utils.EMCHelper;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.ItemLike;
 import org.jetbrains.annotations.Range;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class KubeJSProjectERecipeEMCPlugin extends KubeJSPlugin {
@@ -56,8 +56,16 @@ public class KubeJSProjectERecipeEMCPlugin extends KubeJSPlugin {
             return new IngredientHelper(collector);
         }
 
-        public Stream<ItemStack> getIngredientItems(Ingredient ingredient) {
-            return Arrays.stream(ingredient.getItems());
+        public <T> Stream<T> toStream(T[] array) {
+            return Arrays.stream(array);
+        }
+
+        public <T> Stream<T> toStream(Iterable<T> iterable) {
+            List<T> list = new ArrayList<>();
+            for (T t : iterable) {
+                list.add(t);
+            }
+            return list.stream();
         }
     }
 

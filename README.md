@@ -15,7 +15,7 @@ ProjectERecipeEMCEvents.setRecipeEMC(event => {
       }
       let helper = ProjectERecipeEMCHelper.getIngredientHelper(collector);
       recipe.getIngredients().forEach(representation => {
-        let item = ProjectERecipeEMCHelper.getIngredientItems(representation).min(
+        let item = ProjectERecipeEMCHelper.toStream(representation.getStacks()).min(
           (a, b) => EMCHelper.getEmcValue(a) - EMCHelper.getEmcValue(b)
         );
         if (item.isEmpty() || item.get().isEmpty()) {
